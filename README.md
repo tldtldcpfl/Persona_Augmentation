@@ -8,3 +8,4 @@
 ### Resources
 - Paper: https://aclanthology.org/2022.acl-long.550.pdf
 - NLI_Dataset (Kor): https://github.com/smilegate-ai/HuLiC/tree/main/HuLiC_benchmark
+- https://github.com/monologg/KoBERT-Transformers
