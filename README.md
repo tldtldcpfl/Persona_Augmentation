@@ -7,4 +7,4 @@
 
 ### Resources
 - Paper: https://aclanthology.org/2022.acl-long.550.pdf
-- Dataset: https://github.com/smilegate-ai/HuLiC/tree/main/HuLiC_benchmark
+- NLI_Dataset (Kor): https://github.com/smilegate-ai/HuLiC/tree/main/HuLiC_benchmark
