@@ -1,6 +1,20 @@
 import numpy as np
 import pandas as pd
 import os
+from torch.utils.data import Dataset, DataLoader, random_split
+# kobert tokenizer
+from kobert_transformers import get_tokenizer
+tokenizer = get_tokenizer()
+
+# load data
+path = '일상대화_Blender1.xlsx'
+df = pd.read_excel(path, engine='openpyxl')
+
+train_size = int(len(df) * 0.7)
+validation_size = int(len(df) * 0.2)
+test_size = len(df) - train_size - validation_size
+train_dataset, validation_dataset, test_dataset = random_split(df, [train_size, validation_size, test_size])
+
 
 class BertInputFeatures(object):
     def __init__(self, input_ids, input_mask, segment_ids):
